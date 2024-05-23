@@ -8,16 +8,18 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App
-      token01={["Test", "#0F62FE", "Primary color"]}
-      token02={["Test 2", "#0F62FE", "Primary color"]}
-      token03={["Test 3", "#0F62FE", "Primary color"]}
-      token04={["Test 3", "#0F62FE", "Primary color"]}
-      token05={["Test 3", "#0F62FE", "Primary color"]}
-      token06={["Test 3", "#0F62FE", "Primary color"]}
-      token07={["Test 3", "#0F62FE", "Primary color"]}
-      token08={["Test 3", "#0F62FE", "Primary color"]}
-      token09={["Test 3", "#0F62FE", "Primary color"]}
-      token10={["Test 3", "#0F62FE", "Primary color"]}
+      token01={["Blue 100", "#dbeafe", "Base Blue plalette"]}
+      token02={["Blue 200", "#bfdbfe", "Base Blue plalette"]}
+      token03={["Blue 300", "#93c5fd", "Base Blue plalette"]}
+      token04={["Blue 400", "#60a5fa", "Base Blue plalette"]}
+      token05={["Blue 500", "#3b82f6", "Base Blue plalette"]}
+      token06={["Blue 600", "#2563eb", "Base Blue plalette"]}
+      token07={["Blue 700", "#1d4ed8", "Base Blue plalette"]}
+      token08={["Blue 800", "#1e40af", "Base Blue plalette"]}
+      token09={["Primary — test for a long name", "#2563eb", "Primary color — test for too long description"]}
+      token10={["Success", "#16a34a", "Success color"]}
+      token11={["Critical", "#dc2626", "Critical color"]}
+      token12={["Warning", "#ea580c", "Warning color"]}
     />
   </React.StrictMode>
 );

@@ -1,5 +1,5 @@
 :root {
-    --delay: 50ms;
+    --delay: 40ms;
     --table-offset: 32px;
     --editor-offset: 53px;
 }
@@ -13,7 +13,7 @@
 
 .token-editor {
     transform: scaleX(5) scaleY(3);
-    border-radius: calc(4px/5) / calc(4px/3);
+    border-radius: calc(4px/5) / calc(4px/3);    
     background-color: blue;
 }
 

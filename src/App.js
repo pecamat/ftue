@@ -20,8 +20,8 @@ function App({
   token11,
   token12,
 }) {
-  const [isTableActive, setIsTableActive] = useState(true);
-  const [isEditorActive, setIsEditorActive] = useState(false);
+  const [isTableActive, setIsTableActive] = useState(false);
+  const [isEditorActive, setIsEditorActive] = useState(true);
 
   const changeScreenToEditor = () => {
     setIsEditorActive(true);

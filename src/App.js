@@ -35,10 +35,9 @@ function App({
 
   return (
     <div className="flex">
-
       {/* Temporary controls */}
 
-      <div className="flex flex-col bg-white p-4 z-10 gap-4">
+      <div className="flex flex-col bg-white p-4 z-10 gap-4 justify-center">
         <button className="bg-slate-200 p-2" onClick={changeScreenToEditor}>
           Editor
         </button>
@@ -47,24 +46,27 @@ function App({
         </button>
       </div>
 
-      {/* Animations */}
+      {/* Animation Container */}
 
       <div className="relative flex justify-center items-center w-full h-screen overflow-hidden">
+        {/* Gradients */}
+
         <div className="absolute inset-0 overflow-hidden rounded-xl">
-
-          {/* Gradients */}
-
           <div className="gradient1"></div>
           <div className="gradient2"></div>
           <div className="gradient3"></div>
         </div>
-        <div className="absolute w-[620px] h-[460px] app-screen-container">
 
+        {/* Screens */}
+
+        <div className="absolute w-[620px] h-[460px] app-screen-container">
           {/* Tokens screen */}
 
           <div
-            id="table"
-            className={`svg-container overflow-hidden tokens ${isTableActive ? "active" : ""} absolute flex justify-center items-center w-[620px] h-[460px] rounded-xl shadow-[0_40px_80px_0_rgba(0,0,0,0.08)]`}>
+            className={`svg-container overflow-hidden tokens ${
+              isTableActive ? "active" : ""
+            } absolute flex justify-center items-center w-[620px] h-[460px] rounded-xl shadow-[0_40px_80px_0_rgba(0,0,0,0.08)]`}
+          >
             <div className="absolute bottom-0 right-0 w-[420px] h-[389px]">
               <div className="flex gap-4 h-[20px] bg-[#F4F5F7] items-center text-[#606981] text-[8px] pl-4 border-t-1 border-b border-[#ECEEF3]">
                 <div className="flex-1">Name</div>
@@ -90,34 +92,83 @@ function App({
           {/* Editor screen */}
 
           <div
-            id="editor"
-            className={`svg-container overflow-hidden editor ${isEditorActive ? "active" : ""} absolute flex justify-center items-center w-[620px] h-[460px] rounded-xl shadow-[0_40px_80px_0_rgba(0,0,0,0.08)]`}>
+            className={`svg-container overflow-hidden editor ${
+              isEditorActive ? "active" : ""
+            } absolute flex justify-center items-center w-[620px] h-[460px] rounded-xl shadow-[0_40px_80px_0_rgba(0,0,0,0.08)]`}
+          >
             <div className="absolute bottom-0 right-[47px] w-[330px] h-[196px]">
-            <TokenDetail token={token01} />
-            <TokenDetail token={token02} />
-            <TokenDetail token={token03} />
-            <TokenDetail token={token04} />
+              <TokenDetail token={token01} />
+              <TokenDetail token={token02} />
+              <TokenDetail token={token03} />
+              <TokenDetail token={token04} />
             </div>
             <img className="min-w-[900px] min-h-[1050px]" src={editor} />
           </div>
 
           {/* Token thumbnails */}
-        
-        <div className="absolute w-[620px] h-[460px] overflow-hidden">
-          <TokenThumbnail token={token01} isEditorActive={isEditorActive} number="01" />
-          <TokenThumbnail token={token02} isEditorActive={isEditorActive} number="02" />
-          <TokenThumbnail token={token03} isEditorActive={isEditorActive} number="03" />
-          <TokenThumbnail token={token04} isEditorActive={isEditorActive} number="04" />
-          <TokenThumbnail token={token05} isEditorActive={isEditorActive} number="05" />
-          <TokenThumbnail token={token06} isEditorActive={isEditorActive} number="06" />
-          <TokenThumbnail token={token07} isEditorActive={isEditorActive} number="07" />
-          <TokenThumbnail token={token08} isEditorActive={isEditorActive} number="08" />
-          <TokenThumbnail token={token09} isEditorActive={isEditorActive} number="09" />
-          <TokenThumbnail token={token10} isEditorActive={isEditorActive} number="10" />
-          <TokenThumbnail token={token11} isEditorActive={isEditorActive} number="11" />
-          <TokenThumbnail token={token12} isEditorActive={isEditorActive} number="12" />
-        </div>
 
+          <div className="absolute w-[620px] h-[460px] overflow-hidden">
+            <TokenThumbnail
+              token={token01}
+              isEditorActive={isEditorActive}
+              number="01"
+            />
+            <TokenThumbnail
+              token={token02}
+              isEditorActive={isEditorActive}
+              number="02"
+            />
+            <TokenThumbnail
+              token={token03}
+              isEditorActive={isEditorActive}
+              number="03"
+            />
+            <TokenThumbnail
+              token={token04}
+              isEditorActive={isEditorActive}
+              number="04"
+            />
+            <TokenThumbnail
+              token={token05}
+              isEditorActive={isEditorActive}
+              number="05"
+            />
+            <TokenThumbnail
+              token={token06}
+              isEditorActive={isEditorActive}
+              number="06"
+            />
+            <TokenThumbnail
+              token={token07}
+              isEditorActive={isEditorActive}
+              number="07"
+            />
+            <TokenThumbnail
+              token={token08}
+              isEditorActive={isEditorActive}
+              number="08"
+            />
+            <TokenThumbnail
+              token={token09}
+              isEditorActive={isEditorActive}
+              number="09"
+            />
+            <TokenThumbnail
+              token={token10}
+              isEditorActive={isEditorActive}
+              number="10"
+            />
+            <TokenThumbnail
+              token={token11}
+              isEditorActive={isEditorActive}
+              number="11"
+            />
+            <TokenThumbnail
+              token={token12}
+              isEditorActive={isEditorActive}
+              number="12"
+            />
+          </div>
         </div>
       </div>
     </div>

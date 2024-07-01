@@ -1,4 +1,4 @@
-/* Testing commit */
+/* Test */
 
 import React, { useState } from "react";
 import table from "./table.svg";
